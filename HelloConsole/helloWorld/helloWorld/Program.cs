@@ -14,6 +14,12 @@ namespace helloWorld
 
             string name = Console.ReadLine();
 
+            for(int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(i + "%");
+                System.Threading.Thread.Sleep(50);
+            }
+
             Console.WriteLine("Hello " + name);
 
             Console.ReadKey();
