@@ -8,8 +8,6 @@ namespace UsingSwitch
         {
             Xyz();
 
-    
-
             void Xyz()
             {
 
