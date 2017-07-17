@@ -8,13 +8,13 @@ namespace ConsoleAppTry
         {
             try
                 {
-                    string[] fruit = { "Apples", "Oranges", null, "Pineapples" };
-                for (int i = 0; i <= fruit.Length; i++)
+                    string[] fruit = { "Apples", "Oranges", "Pineapples" };
+                for (int i = 0; i < fruit.Length; i++)
                 {
-                    //if (fruit[i] == null)
-                    //{
-                    //    throw (new ArgumentNullException());
-                    //}
+                    if (fruit[i] == null)
+                    {
+                        throw (new ArgumentNullException());
+                    }
 
                     Console.WriteLine("The fruit is " + fruit[i]);
                 }
@@ -29,6 +29,10 @@ namespace ConsoleAppTry
             {
                 Console.WriteLine("Null Problem");
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Finally block has been reached");
             }
 
          
